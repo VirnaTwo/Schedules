@@ -1,0 +1,68 @@
+.unselectable {
+  	user-select: none;
+}
+
+html, body, input, textarea, select, button {
+  	font-family: monospace;
+	font-size: 1.3em;
+  	border-color: #736b5e;
+  	color: #e8e6e3;
+  	background-color: #181a1b;
+}
+
+* {
+  	scrollbar-color: #454a4d #202324;
+}
+
+.btn{
+  	border: 2px solid #736b5e;
+  	border-radius: 3px;
+  	color: white;
+  	transition: 555ms;
+  	cursor: pointer;
+}
+
+.btn:hover{
+  	background: rgb(85, 67, 44);
+}
+
+.btn:active{
+  	transition: 0s;
+  	background: rgb(45, 27, 4);
+}
+
+.auteur {
+	font-size: 0.5em;
+}
+
+.matier {
+	font-size: 1.5em;
+}
+
+.classe {
+	height: 0px;
+}
+
+.horaireE {
+	align-self: flex-start;
+	padding-top: 6%;
+}
+
+.cours {
+	width: 10em;
+	height: 3.5em;
+	display: flex;
+	flex-direction: column;
+	border: solid 3px;
+}
+
+.textHeure {
+	font-size: 0.5em;
+	width: 0px;
+	height: 0px;
+}
+
+.textCours {
+	align-self: center;
+	justify-self: center;
+}
