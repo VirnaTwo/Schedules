@@ -1,7 +1,3 @@
-.unselectable {
-  	user-select: none;
-}
-
 html, body, input, textarea, select, button {
   	font-family: monospace;
 	font-size: 1.3em;
