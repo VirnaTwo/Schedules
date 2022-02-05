@@ -1,30 +1,36 @@
+const example = [
+    {
+        'Horaire': '08h00',
+        'Matiere': 'Mathematique',
+        'Professeur': 'M. Kiricou',
+        'Classe': '228'
+    },
+    {
+        'Horaire': '10h30',
+        'Matiere': 'Physique',
+        'Professeur': 'Mme. Seaugo',
+        'Classe': '107'
+    },
+    {
+        'Horaire': '16h20',
+        'Matiere': 'Technologie',
+        'Professeur': 'M. Azouze',
+        'Classe': '122'
+    },
+    {
+        'Horaire': '19h45',
+        'Matiere': 'Specialité',
+        'Professeur': 'Mme. Origon',
+        'Classe': '202'
+    }
+]
+
 let EmploisDuTemps = {
-    'Lundi': [
-        {
-            'Horaire': '08h10',
-            'Matiere': 'Anglais',
-            'Professeur': 'Mr.Kouyio',
-            'Classe': 'C-210'
-        },
-        {
-            'Horaire': '09h05',
-            'Matiere': '47',
-            'Professeur': 'Mr.Kouyio',
-            'Classe': 'C-210'
-        },
-        {
-            'Horaire': '10h00',
-            'Matiere': 'Aveugle',
-            'Professeur': 'Mr.Kouyio',
-            'Classe': 'C-210'
-        },
-        {
-            'Horaire': '11h10',
-            'Matiere': 'Mono Jambiste',
-            'Professeur': 'Mr.Kouyio',
-            'Classe': 'C-210'
-        }
-    ]
+    'Lundi': example,
+    'Mardi': example,
+    'Mercredi': example,
+    'Jeudi': example,
+    'Vendredi': example,
 }
 
 for (const jour in EmploisDuTemps) {
@@ -34,7 +40,7 @@ for (const jour in EmploisDuTemps) {
         let El_Cours = document.createElement('dl')
         El_Cours.innerHTML = `<dt>${Cours['Horaire']}</dt><dd class="cours"><label class="matier">${Cours['Matiere']}</label><br>
                                 <label class="auteur">${Cours['Professeur']}</label><br>
-                                <label class="classe">${Cours['Classe']}</label></dd><br>`
+                                <label class="classe">${Cours['Classe']}</label></dd>`
         ElEmploisDuTemps.appendChild(El_Cours)
     }
 }

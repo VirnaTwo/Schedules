@@ -1,5 +1,5 @@
 html, body, input, textarea, select, button {
-  	font-family: monospace;
+  	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 1.3em;
   	border-color: #736b5e;
   	color: #e8e6e3;
@@ -36,20 +36,34 @@ html, body, input, textarea, select, button {
 }
 
 .cours {
-	margin: 10px;
-	border: solid .1em;
+	margin: 0px 0px 50px 30px;
+	padding: 5px 20px;
+	border: solid rgb(121, 98, 155) .1em;
 }
 
 #ElEmploisDuTemps {
 	display: flex;
-	justify-content: space-between;
-}
-
-#Horaire {
-	padding: 10px;
-	border: solid 3px white;
+	justify-content: center;
 }
 
 .jour {
-	border: solid 3px white;
+	padding: 0px 20px;
+	margin: 10px;
+	border: solid 3px rgb(51, 45, 59);
+}
+
+@media screen and (max-width: 1800px) {
+	#ElEmploisDuTemps {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 2200px) {
+	.cours {
+		margin: 0px 0px 100px 100px;
+	}
+	.jour {
+		margin: 30px;
+	}
 }
