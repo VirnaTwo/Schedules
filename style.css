@@ -34,9 +34,21 @@ html, body, input, textarea, select, button {
 	border: solid 3px rgb(51, 45, 59);
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1080px) {
 	#ElEmploisDuTemps {
-		display: flex;
+		font-size: 0.8em;
+	}
+	.cours {
+		margin: 0px 0px 1px 1px;
+		padding: 1px 10px;
+	}
+	.jour {
+		margin: 2px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#ElEmploisDuTemps {
 		flex-direction: column;
 	}
 }
@@ -44,21 +56,16 @@ html, body, input, textarea, select, button {
 @media screen and (min-width: 2200px) {
 	.cours {
 		margin: 0px 0px 100px 100px;
+		border: solid rgb(121, 98, 155) 0.2em;
 	}
 	.jour {
 		margin: 30px;
+		border: solid 6px rgb(51, 45, 59);
 	}
 }
 
 @media screen and (min-width: 2800px) {
 	#ElEmploisDuTemps {
 		font-size: 1.5em;
-	}
-	.auteur {
-		font-size: 1em;
-	}
-	
-	.classe {
-		font-size: 1em;
 	}
 }
